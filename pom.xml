@@ -15,6 +15,7 @@
     <spring.version>4.2.5.RELEASE</spring.version>
     <junit.version>4.10</junit.version>
     <soa-version>1.0.0.0-SNOPSHOT</soa-version>
+    <assembly.version>2.6</assembly.version>
   </properties>
   <dependencyManagement>
     <dependencies>
@@ -90,6 +91,11 @@
       <groupId>org.springframework</groupId>
       <artifactId>spring-beans</artifactId>
     </dependency>
+    <dependency>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-assembly-plugin</artifactId>
+      <version>${assembly.version}</version>
+    </dependency>
   </dependencies>
   <modules>
     <module>app/soa-util</module>
@@ -100,5 +106,25 @@
     <module>app/soa-facade</module>
     <module>app/soa-controller</module>
     <module>webdocs</module>
+    <module>assembly</module>
   </modules>
+
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-assembly-plugin</artifactId>
+          <version>${assembly.version}</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-assembly-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </build>
 </project>

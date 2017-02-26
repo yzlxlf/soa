@@ -9,6 +9,7 @@
     <file url="file://$PROJECT_DIR$/app/soa-integration" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/soa-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/soa-util" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/assembly" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/webdocs" charset="UTF-8" />
   </component>
 </project>
